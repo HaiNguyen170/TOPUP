@@ -1,0 +1,64 @@
+<div class="container-fluid">
+    <div class="row no-gutter"> 
+      <div class="login d-flex align-items-center py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9 col-lg-8 mx-auto">
+              <form *ngIf="!isSuccessful" name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+                <div class="form-label-group">
+                  <label for="name">Project Title</label>
+                  <input type="text" class="form-control" name="name" [(ngModel)]="form.name" required
+                    #name="ngModel"/>
+                  <div class="alert-danger" *ngIf="name?.errors && f.submitted">
+                    <div *ngIf="name.errors.required">Title is required</div>
+                  </div>
+                </div>
+  
+                <div class="form-label-group">
+                  <label for="des">Description</label>
+                  <input type="des" class="form-control" name="des" [(ngModel)]="form.des" required
+                    #des="ngModel" />
+                  <div class="alert-danger" *ngIf="des?.errors && f.submitted">
+                    <div *ngIf="des.errors.required">Description is required</div>
+                  </div>
+                </div>
+  
+  
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Faculty</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option selected>Select</option>
+                    <option>I.T</option>
+                    <option>Science</option>
+                    <option>Business</option>
+                    <option>Architecture</option>
+                    <option>Social</option>
+                    <option>Music & Art</option>
+                  </select>
+                </div>
+
+                <form>
+                    <label for="deadline">Deadline:</label>
+                    <input type="date" id="deadline" name="deadline">
+                    <input type="submit" class="btn btn-primary" id="accept">
+                  </form>
+                <br>
+  
+                <div class="form-group">
+                  <button class="btn btn-primary btn-block btn-sign">Create</button>
+                </div>
+  
+                <div class="alert alert-warning" *ngIf="f.submitted && isSignUpFailed">
+                  Create Event Failed!<br />{{ errorMessage }}
+                </div>
+              </form>
+  
+              <div class="alert alert-success" *ngIf="isSuccessful">
+                Create Event successful!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

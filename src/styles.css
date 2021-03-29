@@ -34,7 +34,7 @@
    height: auto;
    padding-top: 8rem;
    padding-bottom: 8rem;
-   background: linear-gradient(90deg, rgba(7, 5, 5, 0.411) 0%, rgba(22, 22, 22, 0.281) 100%), url("./assets/img/bg-masthead2.jpg");
+   background: linear-gradient(90deg, rgba(7, 5, 5, 0.411) 0%, rgba(22, 22, 22, 0.281) 100%), url("./assets/img/header.jpg");
    background-position: center center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -74,7 +74,7 @@
  
  /*-- //navbar --*/ 
 
- /*-- nav --*/ 
+ /*-- nav-toggle --*/ 
 .caret-off::before {
   display: none;
 }
@@ -110,7 +110,7 @@
  .menu-toggle:hover {
    background: #343a40;
  }
- /*-- //nav --*/ 
+ /*-- //nav-toggle --*/ 
 
 
  /*-- service --*/ 
@@ -151,7 +151,7 @@
 /*-- mag-banner --*/ 
  .callout {
    padding: 15rem 0;
-   background: linear-gradient(90deg, rgba(22, 21, 21, 0.212) 0%, rgba(12, 12, 12, 0.226) 100%), url("./assets/img/bg-callout.jpg");
+   background: linear-gradient(90deg, rgba(22, 21, 21, 0.212) 0%, rgba(12, 12, 12, 0.226) 100%), url("./assets/img/magazine.jpg");
    background-position: center center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -198,6 +198,10 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+ }
+
+ .portfolio-item{
+   cursor: pointer;
  }
  
  .portfolio-item .caption .caption-content h2 {
@@ -448,19 +452,13 @@ a.move-top span{
 
 /*-- media --*/ 
 @media only screen 
-and (min-device-width: 320px) 
+and (min-device-width: 280px) 
 and (max-device-width: 745px)
 and (-webkit-min-device-pixel-ratio: 2)  {
-
     .menu-toggle{
       visibility: hidden;
     }
-
-    body{
-      width: 130%;
-    }
 }
-
 
 @media (min-width: 992px) {
   .masthead {

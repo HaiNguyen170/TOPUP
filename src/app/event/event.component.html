@@ -1,0 +1,22 @@
+<!-- Heading -->
+<div class="container">
+    <h1 class="my-4">Annual Magazine
+        <small>Choose your course</small>
+    </h1>
+</div>
+
+<!-- Event Content -->
+<div class="container" *ngFor="let p of (data)">
+    <div class="row">
+        <div class="col-md-7">
+            <h3>Project {{p.year}}</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita
+                laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis
+                atque eveniet unde.</p>
+        </div>
+        <div class="col-md-5 ">
+            <button [routerLink]="['/Submit', p.year]" class="btn btn-primary">View Project</button>
+        </div>
+    </div>
+    <hr>
+</div>

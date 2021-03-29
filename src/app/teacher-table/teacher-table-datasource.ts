@@ -5,7 +5,7 @@ import { map } from 'rxjs/operators';
 import { Observable, of as observableOf, merge } from 'rxjs';
 
 // TODO: Replace this with your own data model type
-export interface DataTableItem {
+export interface TeacherTableItem {
   name: string;
   id: number;
   faculty:string;
@@ -15,7 +15,7 @@ export interface DataTableItem {
 }
 
 // TODO: replace this with real data from your application
-const EXAMPLE_DATA: DataTableItem[] = [
+const EXAMPLE_DATA: TeacherTableItem[] = [
   {id: 1, name: 'Bane', faculty:'I.T', address: '46 Berkeley Road', phone:'077 3458 0460', email:'MyBoundless@gmail.com'},
   {id: 2, name: 'Todd', faculty:'Business', address: '9 Jubilee Drive', phone:'079 8109 9975', email:'SuperWiggly@gmail.com'},
   {id: 3, name: 'Sarah', faculty:'Social', address: '63 Prince Consort Road', phone:'070 5691 5449', email:'sarahs@gmail.com'},
@@ -27,27 +27,18 @@ const EXAMPLE_DATA: DataTableItem[] = [
   {id: 9, name: 'Robert', faculty:'I.T', address: '54 Holburn Lane', phone:'077 7595 9519', email:'MyDaily@gmail.com'},
   {id: 10, name: 'Amy', faculty:'Science', address: '94 Stroud Road', phone:'070 7239 9339', email:'alhajj@comcast.net'},
   {id: 11, name: 'Luca', faculty:'Music & Art', address: '31 Great North Road', phone:'079 5297 5671', email:'nogin@gmail.com'},
-  {id: 12, name: 'Ted', faculty:'Architect', address: '19 Hendford Hill', phone:'078 8842 6994', email:'peterhoeg@outlook.com'},
-  {id: 13, name: 'Matilda', faculty:'Business', address: '26 Ash Lane', phone:'077 4547 1268', email:'mschilli@gmail.com'},
-  {id: 14, name: 'Sean', faculty:'Architect', address: '89 Graham Road', phone:'070 7695 6676', email:'SuperJagged@gmail.com'},
-  {id: 15, name: 'Ryan', faculty:'I.T', address: '1 St Dunstans Street', phone:'077 5885 2557', email:'cosimo@comcast.net'},
-  {id: 16, name: 'Dean', faculty:'Music & Art', address: '72 Oxford Road', phone:'070 2055 4798', email:'terjesa@gmail.com'},
-  {id: 17, name: 'Aysha', faculty:'Music & Art', address: '34 Greyfriars Road', phone:'078 0427 3014', email:'eminence@gmail.com'},
-  {id: 18, name: 'Winston', faculty:'Business', address: '50 Seafield Place', phone:'077 5464 4178', email:'laird@comcast.net'},
-  {id: 19, name: 'Jason', faculty:'Science', address: '88 Golden Knowes Road', phone:'078 0726 4522', email:'sdawson@gmail.com'},
-  {id: 20, name: 'Lynsey', faculty:'Social', address: '67 Northgate Street', phone:'070 0901 0237', email:'pfitza@outlook.com'},
+  {id: 12, name: 'Ted', faculty:'Architect', address: '19 Hendford Hill', phone:'078 8842 6994', email:'peterhoeg@outlook.com'}
 ];
 
 /**
- * Data source for the DataTable view. This class should
+ * Data source for the TeacherTable view. This class should
  * encapsulate all logic for fetching and manipulating the displayed data
  * (including sorting, pagination, and filtering).
  */
-export class DataTableDataSource extends DataSource<DataTableItem> {
-  data: DataTableItem[] = EXAMPLE_DATA;
+export class TeacherTableDataSource extends DataSource<TeacherTableItem> {
+  data: TeacherTableItem[] = EXAMPLE_DATA;
   paginator: MatPaginator | undefined;
   sort: MatSort | undefined;
-  filter: string;
 
   constructor() {
     super();
@@ -58,7 +49,7 @@ export class DataTableDataSource extends DataSource<DataTableItem> {
    * the returned stream emits new items.
    * @returns A stream of the items to be rendered.
    */
-  connect(): Observable<DataTableItem[]> {
+  connect(): Observable<TeacherTableItem[]> {
     if (this.paginator && this.sort) {
       // Combine everything that affects the rendered data into one update
       // stream for the data-table to consume.
@@ -81,7 +72,7 @@ export class DataTableDataSource extends DataSource<DataTableItem> {
    * Paginate the data (client-side). If you're using server-side pagination,
    * this would be replaced by requesting the appropriate data from the server.
    */
-  private getPagedData(data: DataTableItem[]): DataTableItem[] {
+  private getPagedData(data: TeacherTableItem[]): TeacherTableItem[] {
     if (this.paginator) {
       const startIndex = this.paginator.pageIndex * this.paginator.pageSize;
       return data.splice(startIndex, this.paginator.pageSize);
@@ -94,7 +85,7 @@ export class DataTableDataSource extends DataSource<DataTableItem> {
    * Sort the data (client-side). If you're using server-side sorting,
    * this would be replaced by requesting the appropriate data from the server.
    */
-  private getSortedData(data: DataTableItem[]): DataTableItem[] {
+  private getSortedData(data: TeacherTableItem[]): TeacherTableItem[] {
     if (!this.sort || !this.sort.active || this.sort.direction === '') {
       return data;
     }

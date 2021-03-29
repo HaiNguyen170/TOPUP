@@ -1,6 +1,6 @@
 <div class="d-flex justify-content-around mt-5 chart">
     <!-- Bar Chart -->
-    <div class="col-xl-6 chart">
+    <div class="col-xl-6">
         <div class="card shadow mb-4">
             <div class="card-header py-3">
                 <h6 class="m-0 font-weight-bold text-primary">Contributions (In Number)</h6>
@@ -12,16 +12,13 @@
                         [legend]="barChartLegend" [chartType]="barChartType" (chartHover)="chartHovered($event)"
                         (chartClick)="chartClicked($event)"></canvas>
                     <br>
-                    <!--  
-                    <button mat-button mat-raised-button class="btn btn-primary js-scroll-trigger"
-                        (click)="lineview()">Line View</button> -->
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Pie Chart -->
-    <div class="col-xl-6 chart">
+    <div class="col-xl-6">
         <div class="card shadow mb-4">
             <div class="card-header py-3">
                 <h6 class="m-0 font-weight-bold text-primary">Contributions (In Percentage)</h6>

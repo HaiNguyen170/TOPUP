@@ -22,6 +22,15 @@ import { ChartsModule } from 'ng2-charts';
 import { RegisterComponent } from './register/register.component';
 import { ProfileComponent } from './profile/profile.component';
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
+import { MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule} from '@angular/material/core';
+import { MatFormFieldModule} from '@angular/material/form-field';
+import { ReactiveFormsModule} from '@angular/forms';
+import { TeacherTableComponent } from './teacher-table/teacher-table.component';
+import { ArticleComponent } from './article/article.component';
+import { DetailComponent } from './detail/detail.component';
+import { EventComponent } from './event/event.component';
+import { EventCreateComponent } from './event-create/event-create.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +43,12 @@ import { authInterceptorProviders } from './_helpers/auth.interceptor';
     DataTableComponent,
     MagTableComponent,
     RegisterComponent,
-    ProfileComponent
+    ProfileComponent,
+    TeacherTableComponent,
+    ArticleComponent,
+    DetailComponent,
+    EventComponent,
+    EventCreateComponent, 
   ], 
   imports: [
     BrowserModule,
@@ -46,9 +60,13 @@ import { authInterceptorProviders } from './_helpers/auth.interceptor';
     MatPaginatorModule,
     MatSortModule,
     MatButtonModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
     BrowserAnimationsModule,
     ChartsModule,
-    FormsModule
+    MatFormFieldModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent]

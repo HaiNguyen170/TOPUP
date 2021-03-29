@@ -1,20 +1,31 @@
 <nav class="navbar navbar-expand navbar-dark bg-dark container-fluid">
-<div class="row">
-    <div class="column pr-1" *ngIf="!isLoggedIn">
-        <a class="nav-item nav-link text-white" (click)="goToPage('')">Home</a>
-        <a class="nav-item nav-link text-white" (click)="goToPage('Login')">Login</a>
-        <a class="nav-item nav-link text-white" (click)="goToPage('Register')">Register</a>
-        <a class="nav-item nav-link text-white" (click)="goToPage('Error')">Upcoming Project</a>
-    </div>
-    
-    <div class="column pl-1" *ngIf="!isLoggedIn" >
-        <a class="nav-item nav-link text-white" (click)="goToPage('Submit')">Submission</a>
-        <a class="nav-item nav-link text-white" (click)="goToPage('Table')">Manage</a>
-        <a class="nav-item nav-link text-white" (click)="goToPage('Mag-Table')">Grading</a>
-        <a class="nav-item nav-link text-white" (click)="goToPage('Statistic')">Statistic</a>
-    </div>
-    
-  
-    </div>
+    <div class="row">
+        <div class="column pr-1" *ngIf="!isLoggedIn">
+            <a class="nav-item nav-link text-white" (click)="goToPage('')">Home</a>
+            <a class="nav-item nav-link text-white" (click)="goToPage('Login')">Login</a>
+            <a class="nav-item nav-link text-white" (click)="goToPage('Error')">Upcoming Project</a>
+        </div>
+
+        <div class="column pl-1" *ngIf="!isLoggedIn">
+            <a class="nav-item nav-link text-white" (click)="goToPage('Register')">Register</a>
+            <a class="nav-item nav-link text-white" (click)="goToPage('Create')">Create Events</a>
+            <a class="nav-item nav-link text-white" (click)="goToPage('Table')">Student Manage</a>
+            <a class="nav-item nav-link text-white" (click)="goToPage('Teach')">Teacher Manage</a>
+        </div>
+        
+            <div class="column pl-1" *ngIf="!isLoggedIn">
+                <a class="nav-item nav-link text-white" (click)="goToPage('Event')">Submission</a>
+            </div>
+
+            <div class="column pl-1" *ngIf="!isLoggedIn">
+                <a class="nav-item nav-link text-white" (click)="goToPage('Mag-Table')">Grading</a>
+            </div>
+
+            <div class="column pl-1" *ngIf="!isLoggedIn">
+                <a class="nav-item nav-link text-white" (click)="goToPage('Statistic')">Statistic</a>
+            </div>
+
+
+        </div>
 </nav>
 <router-outlet></router-outlet>

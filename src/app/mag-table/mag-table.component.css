@@ -16,7 +16,7 @@
 } 
 
 .btn{
-  margin-left: 15px;
+  margin: 10px;
 }
 
 ::ng-deep .mat-sort-header-container {
@@ -26,4 +26,26 @@
 
 .td-center{
   text-align: center;
+}
+
+a[href^="mailto:"] {
+  color: #1D809F !important;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 763px) and (max-device-width: 1155px) {
+  .mat-elevation-z8{
+    display: none;
+  }
+}
+
+@media 
+only screen and 
+(min-device-width: 1155px) and (max-device-width: 1920px) {
+.device{
+  display: none;
+}
 }

@@ -222,6 +222,14 @@
    font-size: 20px;
    -webkit-text-stroke: 0.2px black;
  }
+
+ .view{
+  margin-top: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #888;
+  letter-spacing: 1px;
+ }
  
  @media (min-width: 992px) {
    .category {

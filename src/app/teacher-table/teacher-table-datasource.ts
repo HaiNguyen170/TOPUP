@@ -16,18 +16,18 @@ export interface TeacherTableItem {
 
 // TODO: replace this with real data from your application
 const EXAMPLE_DATA: TeacherTableItem[] = [
-  {id: 1, name: 'Bane', faculty:'I.T', address: '46 Berkeley Road', phone:'077 3458 0460', email:'MyBoundless@gmail.com'},
-  {id: 2, name: 'Todd', faculty:'Business', address: '9 Jubilee Drive', phone:'079 8109 9975', email:'SuperWiggly@gmail.com'},
-  {id: 3, name: 'Sarah', faculty:'Social', address: '63 Prince Consort Road', phone:'070 5691 5449', email:'sarahs@gmail.com'},
-  {id: 4, name: 'Camron', faculty:'I.T', address: '77 Traill Street', phone:'079 7939 2759', email:'shrapnull@comcast.net'},
-  {id: 5, name: 'Stewart', faculty:'Science', address: '10 Walden Road', phone:'070 5940 2054', email:'pplinux@gmail.com'},
-  {id: 6, name: 'James', faculty:'Architect', address: '86 Telford Street', phone:'078 5271 1537', email:'rattenbt@gmail.com'},
-  {id: 7, name: 'Celia', faculty:'Business', address: '79 St Denys Road', phone:'077 1054 7468', email:'falcao@outlook.com'},
-  {id: 8, name: 'Macey', faculty:'Social', address: '36 Park Row', phone:'078 8789 0149', email:'srour@gmail.com'},
-  {id: 9, name: 'Robert', faculty:'I.T', address: '54 Holburn Lane', phone:'077 7595 9519', email:'MyDaily@gmail.com'},
-  {id: 10, name: 'Amy', faculty:'Science', address: '94 Stroud Road', phone:'070 7239 9339', email:'alhajj@comcast.net'},
-  {id: 11, name: 'Luca', faculty:'Music & Art', address: '31 Great North Road', phone:'079 5297 5671', email:'nogin@gmail.com'},
-  {id: 12, name: 'Ted', faculty:'Architect', address: '19 Hendford Hill', phone:'078 8842 6994', email:'peterhoeg@outlook.com'}
+  {id: 1, name: 'Robin', faculty:'Social', address: '74 Nottingham Road', phone:'079 4006 4683', email:'upopiro10z@gmail.com'},
+  {id: 2, name: 'Lisa', faculty:'Music & Art', address: '27 Copthorne Way', phone:'077 3481 0875', email:'sahmarsak6@gmail.com'},
+  {id: 3, name: 'Kim', faculty:'Architect', address: '89 Hudson Road', phone:'077 5356 1374', email:'gopalkarki1234@gmail.com'},
+  {id: 4, name: 'Lee', faculty:'I.T', address: '41 Northgate Street', phone:'070 2004 5971', email:'tali.alma@comcast.net'},
+  {id: 5, name: 'Paul', faculty:'Science', address: '95 Essex Road', phone:'070 5940 2054', email:'lbahaa.avcr@gmail.com'},
+  {id: 6, name: 'Louis', faculty:'Music & Art', address: '23 Spilman Street', phone:'079 7545 2867', email:'ihuongo@gmail.com'},
+  {id: 7, name: 'Isidro', faculty:'Architect', address: '15 Stroud Road', phone:'070 1108 0335', email:'malishba.malik.74@outlook.com'},
+  {id: 8, name: 'Keiran', faculty:'Social', address: '7 Helland Bridge', phone:'078 8410 5822', email:'vcanada.201@gmail.com'},
+  {id: 9, name: 'Johnathan', faculty:'Business', address: '96 Sutton Wick Lane', phone:'051 5243 0851', email:'gypatchica@gmail.com'},
+  {id: 10, name: 'Ben', faculty:'I.T', address: '30 Iffley Road', phone:'078 7827 1949', email:'cjuniormora@comcast.net'},
+  {id: 11, name: 'Liam', faculty:'Business', address: '97 Caxton Place', phone:'070 8817 7427', email:'jose_alvaro-127@gmail.com'},
+  {id: 12, name: 'Ray', faculty:'Social', address: '45 Tadcaster Road', phone:'077 8024 3133', email:'nusrat12257@outlook.com'}
 ];
 
 /**

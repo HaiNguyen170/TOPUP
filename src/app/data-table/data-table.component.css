@@ -4,6 +4,10 @@
   margin-right: auto;
 }
 
+table{
+  overflow: auto;
+}
+
 .mat-elevation-z8{
   width: 80%;
   margin-left: auto;

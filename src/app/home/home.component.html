@@ -8,7 +8,7 @@
             <a ngbDropdownItem href="#about">About</a>
             <a ngbDropdownItem href="#services">Services</a>
             <a ngbDropdownItem href="#team">Our Teachers</a>
-            <a ngbDropdownItem href="#magazine">Magazine</a>
+            <a ngbDropdownItem href="#mag-intro">Magazines</a>
             <a ngbDropdownItem href="#foot">Contact</a>
         </div>
     </div>
@@ -16,23 +16,24 @@
 <!-- //Nav -->
 
 <!-- Header -->
-<header class="header d-flex" id="head">
+<header class="masthead d-flex" id="head">
     <div class="container my-auto">
         <h1 class="mb-1">TOPUP Education</h1>
         <h3 class="mb-5">
             <em>Welcome to the new age</em>
         </h3>
-        <a class="btn btn-primary btn-xl" href="#about">Learn More!</a>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Learn More!</a>
     </div>
+    <div class="overlay"></div>
 </header>
 <!-- //Header -->
 
 <!-- About -->
-<section class="padding bg-light" id="about">
+<section class="content-section bg-light" id="about">
     <div class="container text-center">
         <div class="row">
             <div class="col-lg-10 mx-auto">
-                <div class="caption">
+                <div class="content-section-heading">
                     <h3 class="text-secondary mb-0">ABOUT US</h3><br>
                 </div>
                 <p class="lead mb-5"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quam sem, faucibus
@@ -50,9 +51,9 @@
 <!-- //About -->
 
 <!-- Services -->
-<section class="padding bg-primary text-white text-center" id="services">
+<section class="content-section bg-primary text-white text-center" id="services">
     <div class="container">
-        <div class="caption">
+        <div class="content-section-heading">
             <h3 class="text-secondary mb-0">Services</h3>
             <h2 class="mb-5">What We Offer</h2>
         </div>
@@ -64,7 +65,7 @@
                 <h4>
                     <strong>QUALITY<br>EDUCATION</strong>
                 </h4>
-                <p class="text-faded mb-0">Proin faucibus pellentesque</p>
+                <p class="text-faded mb-0">Proin faucibus pellentesque nulla</p>
             </div>
             <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
                 <span class="service-icon rounded-circle mx-auto mb-3">
@@ -73,7 +74,7 @@
                 <h4>
                     <strong>EXPERIENCED<br>STAFFS</strong>
                 </h4>
-                <p class="text-faded mb-0">Venenatis venenatis vitae</p>
+                <p class="text-faded mb-0">Venenatis eu venenatis vitae</p>
             </div>
             <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
                 <span class="service-icon rounded-circle mx-auto mb-3">
@@ -114,7 +115,7 @@
                 <img src="../../assets/img/ENGLISH.jpg" class="img-fluid" alt="" />
                 <div class="team-info text-center">
                     <h3 class="">Paul Jackson</h3>
-                    <span class="">Science Teacher</span>
+                    <span class="">English Teacher</span>
                 </div>
             </div>
             <div class="team-grid col-md-3 col-sm-6 mb-5">
@@ -137,7 +138,7 @@
 <!-- //Team -->
 
 <!-- Magazine -->
-<section class="magazine" id="magazine">
+<section class="callout" id="mag-intro">
     <div class="container text-center">
         <h2 class="mx-auto mb-5">Our Annualy University Magazine</h2>
         <a class="btn btn-primary btn-xl" href="#mag">Read Below!</a>
@@ -145,94 +146,91 @@
 </section>
 
 
-<section class="padding" id="mag">
+<section class="content-section" id="mag">
     <div class="container">
-        <div class="caption text-center">
+        <div class="content-section-heading text-center">
             <h3 class="text-secondary mb-0">Favourite</h3>
-            <h2 class="">Categories</h2>
-        </div>
-        <div class="view text-center mb-5">
-            <p>Click any to view</p>
+            <h2 class="mb-5">Categories</h2>
         </div>
         <div class="row no-gutters">
             <div class="col-lg-3">
-                <a class="category" (click)="goToPage('Article')">
+                <a class="portfolio-item" href="#!">
                     <div class="caption cap-bg1">
                         <div class="caption-content">
                             <div class="h2 centered">Technology</div>
                         </div>
                     </div>
-                    <img class="img-fluid" src="../../assets/img/category-1.jpg" alt="">
+                    <img class="img-fluid" src="../../assets/img/portfolio-1.jpg" alt="">
                 </a>
             </div>
             <div class="col-lg-3">
-                <a class="category" (click)="goToPage('Article')">
+                <a class="portfolio-item" href="#!">
                     <div class="caption cap-bg2">
                         <div class="caption-content">
                             <div class="h2 centered">Music</div>
                         </div>
                     </div>
-                    <img class="img-fluid" src="../../assets/img/category-2.jpg" alt="">
+                    <img class="img-fluid" src="../../assets/img/portfolio-2.jpg" alt="">
                 </a>
             </div>
             <div class="col-lg-3">
-                <a class="category" (click)="goToPage('Article')">
+                <a class="portfolio-item" href="#!">
                     <div class="caption cap-bg3">
                         <div class="caption-content">
                             <div class="h2 centered">Beauty</div>
                         </div>
                     </div>
-                    <img class="img-fluid" src="../../assets/img/category-3.jpg" alt="">
+                    <img class="img-fluid" src="../../assets/img/portfolio-3.jpg" alt="">
                 </a>
             </div>
             <div class="col-lg-3">
-                <a class="category" (click)="goToPage('Article')">
+                <a class="portfolio-item" href="#!">
                     <div class="caption cap-bg4">
                         <div class="caption-content">
                             <div class="h2 centered">Fashion</div>
                         </div>
                     </div>
-                    <img class="img-fluid" src="../../assets/img/category-4.jpg" alt="">
+                    <img class="img-fluid" src="../../assets/img/portfolio-4.jpg" alt="">
                 </a>
             </div>
             <div class="col-lg-3">
-                <a class="category" (click)="goToPage('Article')">
+                <a class="portfolio-item" href="#!">
                     <div class="caption cap-bg5">
                         <div class="caption-content">
                             <div class="h2 centered">Science</div>
                         </div>
                     </div>
-                    <img class="img-fluid" src="../../assets/img/category-5.jpg" alt="">
+                    <img class="img-fluid" src="../../assets/img/portfolio-5.jpg" alt="">
                 </a>
             </div>
             <div class="col-lg-3">
-                <a class="category" (click)="goToPage('Article')">
+                <a class="portfolio-item" href="#!">
                     <div class="caption cap-bg6">
                         <div class="caption-content">
                             <div class="h2 centered">Business</div>
                         </div>
                     </div>
-                    <img class="img-fluid" src="../../assets/img/category-6.jpg" alt="">
+                    <img class="img-fluid" src="../../assets/img/portfolio-6.jpg" alt="">
                 </a>
             </div>
             <div class="col-lg-3">
-                <a class="category" (click)="goToPage('Article')">
+                <a class="portfolio-item" href="#!">
                     <div class="caption cap-bg7">
                         <div class="caption-content">
                             <div class="h2 centered">Architect</div>
                         </div>
                     </div>
-                    <img class="img-fluid" src="../../assets/img/category-7.jpg" alt="">
+                    <img class="img-fluid" src="../../assets/img/portfolio-7.jpg" alt="">
                 </a>
             </div>
             <div class="col-lg-3">
-                <a class="category" (click)="goToPage('Article')">
+                <a class="portfolio-item" href="#!">
                     <div class="caption cap-bg8">
                         <div class="caption-content">
                             <div class="h2 centered">Film</div>
                         </div>
                     </div>
-                    <img class="img-fluid" src="../../assets/img/category-8.jpg" alt="">
+                    <img class="img-fluid" src="../../assets/img/portfolio-8.jpg" alt="">
                 </a>
             </div>
         </div>

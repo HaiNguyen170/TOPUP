@@ -9,7 +9,6 @@ export interface MagTableItem {
   title: string;
   id: number;
   user: string;
-  faculty: string;
   status: string;
   created_date:string;
   expired_date:string;
@@ -19,26 +18,26 @@ export interface MagTableItem {
 
 // TODO: replace this with real data from your application
 const EXAMPLE_DATA: MagTableItem[] = [
-  {id: 1, title: 'The Importance of Bio-tech', user: 'John', faculty:'I.T', status:'pending', created_date:'10/3/2021', expired_date:'24/3/2021', file:'b', review:'a', },
-  {id: 2, title: 'Travis Scott: New music of our time', user: 'Chase', faculty:'Social',status:'pending', created_date:'5/3/2021', expired_date:'19/3/2021', file:'b', review:'a', },
-  {id: 3, title: 'What is Bitcoin?', user: 'Elise', faculty:'Business',status:'pending', created_date:'3/3/2021', expired_date:'17/3/2021', file:'b', review:'a', },
-  {id: 4, title: 'A Trip to the Moon', user: 'Jay', faculty:'Science',status:'pending', created_date:'10/3/2021', expired_date:'24/3/2021', file:'b', review:'a', },
-  {id: 5, title: 'The Grammy: A Fashion Statement', user: 'Aprxel', faculty:'Music & Art',status:'pending', created_date:'5/3/2021', expired_date:'19/3/2021', file:'b', review:'a', },
-  {id: 6, title: 'Machine learning: A modern future', user: 'Mike', faculty:'I.T',status:'pending', created_date:'10/3/2021', expired_date:'24/3/2021', file:'b', review:'a', },
-  {id: 7, title: 'The Industries of Gaming', user: 'Peter', faculty:'I.T',status:'pending', created_date:'10/3/2021', expired_date:'24/3/2021', file:'b', review:'a', },
-  {id: 8, title: 'Partners in equality', user: 'Tony', faculty:'Business',status:'pending', created_date:'3/3/2021', expired_date:'17/3/2021', file:'b', review:'a', },
-  {id: 9, title: 'The Truth about Cryptocurrency', user: 'Charlie', faculty:'Business',status:'pending', created_date:'3/3/2021', expired_date:'17/3/2021', file:'b', review:'a', },
-  {id: 10, title: 'The Power of Personality', user: 'May', faculty:'Social',status:'pending', created_date:'5/3/2021', expired_date:'19/3/2021', file:'b', review:'a', },
-  {id: 11, title: 'A World Leader in Converting Technologies', user: 'Ethan', faculty:'I.T',status:'pending', created_date:'10/3/2021', expired_date:'24/3/2021', file:'b', review:'a', },
-  {id: 12, title: 'Copyright Infringement', user: 'Harry', faculty:'Music & Art',status:'pending', created_date:'5/3/2021', expired_date:'19/3/2021', file:'b', review:'a', },
-  {id: 13, title: 'Why bat viruses are dangerous', user: 'Simon', faculty:'Science',status:'pending', created_date:'10/3/2021', expired_date:'24/3/2021', file:'b', review:'a', },
-  {id: 14, title: 'On Business Model Innovation', user: 'Felix', faculty:'Business',status:'pending', created_date:'3/3/2021', expired_date:'17/3/2021', file:'b', review:'a', },
-  {id: 15, title: 'Remote Learning Isn’t Just for Kids', user: 'Liz', faculty:'I.T',status:'pending', created_date:'10/3/2021', expired_date:'24/3/2021', file:'b', review:'a', },
-  {id: 16, title: 'Face Foward', user: 'Stacy', faculty:'Social',status:'pending', created_date:'5/3/2021', expired_date:'19/3/2021', file:'b', review:'a', },
-  {id: 17, title: 'Architectire on edge', user: 'Ted', faculty:'Architect',status:'pending', created_date:'3/3/2021', expired_date:'17/3/2021', file:'b', review:'a', },
-  {id: 18, title: 'A.I Analytics', user: 'Don', faculty:'I.T',status:'pending', created_date:'10/3/2021', expired_date:'24/3/2021', file:'b', review:'a', },
-  {id: 19, title: 'How COVID-19 affect the film industry', user: 'Kylie', faculty:'Music & Art',status:'pending', created_date:'5/3/2021', expired_date:'19/3/2021', file:'b', review:'a', },
-  {id: 20, title: 'Science and Culture', user: 'Tobi', faculty:'Science',status:'pending', created_date:'10/3/2021', expired_date:'24/3/2021', file:'b', review:'a', },
+  {id: 1, title: 'The Importance of Bio-tech', user: 'John', status:'pending', created_date:'10/3/2021', expired_date:'24/3/2021', file:'b', review:'a'},
+  {id: 2, title: 'Travis Scott: New music of our time', user: 'Chase', status:'pending', created_date:'5/3/2021', expired_date:'19/3/2021', file:'b', review:'a'},
+  {id: 3, title: 'What is Bitcoin?', user: 'Elise', status:'pending', created_date:'3/3/2021', expired_date:'17/3/2021', file:'b', review:'a'},
+  {id: 4, title: 'A Trip to the Moon', user: 'Jay', status:'pending', created_date:'10/3/2021', expired_date:'24/3/2021', file:'b', review:'a'},
+  {id: 5, title: 'The Grammy: A Fashion Statement', user: 'Aprxel', status:'pending', created_date:'5/3/2021', expired_date:'19/3/2021', file:'b', review:'a'},
+  {id: 6, title: 'Machine learning: A modern future', user: 'Mike', status:'pending', created_date:'10/3/2021', expired_date:'24/3/2021', file:'b', review:'a'},
+  {id: 7, title: 'The Industries of Gaming', user: 'Peter', status:'pending', created_date:'10/3/2021', expired_date:'24/3/2021', file:'b', review:'a'},
+  {id: 8, title: 'Partners in equality', user: 'Tony', status:'pending', created_date:'3/3/2021', expired_date:'17/3/2021', file:'b', review:'a'},
+  {id: 9, title: 'The Truth about Cryptocurrency', user: 'Charlie', status:'pending', created_date:'3/3/2021', expired_date:'17/3/2021', file:'b', review:'a'},
+  {id: 10, title: 'The Power of Personality', user: 'May', status:'pending', created_date:'5/3/2021', expired_date:'19/3/2021', file:'b', review:'a'},
+  {id: 11, title: 'A World Leader in Converting Technologies', user: 'Ethan', status:'pending', created_date:'10/3/2021', expired_date:'24/3/2021', file:'b', review:'a'},
+  {id: 12, title: 'Copyright Infringement', user: 'Harry', status:'pending', created_date:'5/3/2021', expired_date:'19/3/2021', file:'b', review:'a'},
+  {id: 13, title: 'Why bat viruses are dangerous', user: 'Simon', status:'pending', created_date:'10/3/2021', expired_date:'24/3/2021', file:'b', review:'a'},
+  {id: 14, title: 'On Business Model Innovation', user: 'Felix', status:'pending', created_date:'3/3/2021', expired_date:'17/3/2021', file:'b', review:'a'},
+  {id: 15, title: 'Remote Learning Isn’t Just for Kids', user: 'Liz', status:'pending', created_date:'10/3/2021', expired_date:'24/3/2021', file:'b', review:'a'},
+  {id: 16, title: 'Face Foward', user: 'Stacy', status:'pending', created_date:'5/3/2021', expired_date:'19/3/2021', file:'b', review:'a'},
+  {id: 17, title: 'Architectire on edge', user: 'Ted', status:'pending', created_date:'3/3/2021', expired_date:'17/3/2021', file:'b', review:'a'},
+  {id: 18, title: 'A.I Analytics', user: 'Don', status:'pending', created_date:'10/3/2021', expired_date:'24/3/2021', file:'b', review:'a'},
+  {id: 19, title: 'How COVID-19 affect the film industry', user: 'Kylie', status:'pending', created_date:'5/3/2021', expired_date:'19/3/2021', file:'b', review:'a'},
+  {id: 20, title: 'Science and Culture', user: 'Tobi', status:'pending', created_date:'10/3/2021', expired_date:'24/3/2021', file:'b', review:'a'},
 ];
 
 /**

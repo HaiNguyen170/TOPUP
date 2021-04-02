@@ -12,11 +12,11 @@
  }
  
  .btn-xl {
-   padding: 20px 40px;
+   padding: 1.25rem 2.5rem;
  }
  
  h1,h2,h3,h4,h5,h6 {
-   font-weight: 580;
+   font-weight: 550;
  }
  
  .text-faded {
@@ -25,13 +25,16 @@
 
 
  /*-- head --*/ 
- .header {
-   padding: 64px 300px 64px 0;
-   min-height: 500px;
+ .masthead {
+   padding-right: 300px;
+   min-height: 30rem;
    position: relative;
+   display: table;
    width: 100%;
    height: auto;
-   background: linear-gradient(90deg, rgba(7, 5, 5, 0.411) 0%, rgba(22, 22, 22, 0.281) 100%), url("./assets/img/header.jpg");
+   padding-top: 8rem;
+   padding-bottom: 8rem;
+   background: linear-gradient(90deg, rgba(7, 5, 5, 0.411) 0%, rgba(22, 22, 22, 0.281) 100%), url("./assets/img/bg-masthead2.jpg");
    background-position: center center;
    background-repeat: no-repeat;
    background-size: cover;
@@ -39,14 +42,26 @@
    -webkit-text-stroke: 0.2px black;
  }
  
- .header h1 {
-   font-size: 64px;
+ .masthead h1 {
+   font-size: 4rem;
    margin: 0;
    padding: 0;
  }
 
+ .content-section {
+  padding-top: 7.5rem;
+  padding-bottom: 7.5rem;
+}
+
+.content-section-heading h2 {
+  font-size: 3rem;
+}
+
+.content-section-heading h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
  /*-- //head --*/ 
- 
  
  /*-- navbar --*/ 
  .bg-dark{
@@ -59,8 +74,7 @@
  
  /*-- //navbar --*/ 
 
-
- /*-- nav-toggle --*/ 
+ /*-- nav --*/ 
 .caret-off::before {
   display: none;
 }
@@ -96,42 +110,21 @@
  .menu-toggle:hover {
    background: #343a40;
  }
- /*-- //nav-toggle --*/ 
+ /*-- //nav --*/ 
 
 
- /*-- about & service --*/ 
- .padding {
-  padding: 100px 0;
-}
-
-.caption h2 {
-  font-size: 50px;
-}
-
-.caption h3 {
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
+ /*-- service --*/ 
  .service-icon {
    background-color: #fff;
    color: #1D809F;
-   height: 115px;
-   width: 115px;
+   height: 7rem;
+   width: 7rem;
    display: block;
-   line-height: 120px;
-   font-size: 40px;
+   line-height: 7.5rem;
+   font-size: 2.25rem;
+   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
  }
-
- .rounded-circle{
-  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-.rounded-circle:hover  {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.562);
-}
-/*-- //about & service --*/ 
+/*-- //service --*/ 
   
 
  /*-- team --*/ 
@@ -140,14 +133,14 @@
 }
 
 .team-info h3 {
-  font-size: 20px;
+  font-size: 1.3em;
   letter-spacing: 1px;
   color: #222;
 }
 
 .team-info span{
-  margin-top: 8px;
-  font-size: 12px;
+  margin-top: .5em;
+  font-size: .8em;
   text-transform: uppercase;
   color: #888;
   letter-spacing: 1px;
@@ -156,34 +149,34 @@
 
 
 /*-- mag-banner --*/ 
- .magazine {
-   background: linear-gradient( rgba(24, 22, 22, 0.342), rgba(12, 11, 11, 0.329)), url("./assets/img/magazine.jpg");
+ .callout {
+   padding: 15rem 0;
+   background: linear-gradient(90deg, rgba(22, 21, 21, 0.212) 0%, rgba(12, 12, 12, 0.226) 100%), url("./assets/img/bg-callout.jpg");
    background-position: center center;
    background-repeat: no-repeat;
    background-size: cover;
-   padding: 240px 0;
  }
  
- .magazine h2 {
-   display: block;
-   max-width: 500px;
-   font-size: 60px;
+ .callout h2 {
+   font-size: 3.5rem;
    font-weight: 700;
+   display: block;
+   max-width: 30rem;
    color: rgb(255, 255, 255);
  }
  /*-- //mag-banner --*/ 
  
 
  /*-- mag--*/ 
- .category {
+ .portfolio-item {
    display: block;
    position: relative;
    overflow: hidden;
    max-width: 530px;
-   margin: auto auto 18px;
+   margin: auto auto 1rem;
  }
  
- .category .caption {
+ .portfolio-item .caption {
    display: flex;
    height: 100%;
    width: 100%;
@@ -194,10 +187,10 @@
    z-index: 1;
  }
  
- .category .caption .caption-content {
+ .portfolio-item .caption .caption-content {
    color: #fff;
    vertical-align: middle;
-   margin: auto 30px 30px;
+   margin: auto 2rem 2rem;
  }
 
  .centered{
@@ -206,92 +199,82 @@
   left: 50%;
   transform: translate(-50%, -50%);
  }
-
- .category{
-   cursor: pointer;
- }
  
- .category .caption .caption-content h2 {
-   font-size: 12px;
+ .portfolio-item .caption .caption-content h2 {
+   font-size: 0.8rem;
    text-transform: uppercase;
    -webkit-text-stroke: 0.2px black;
  }
  
- .category .caption .caption-content p {
+ .portfolio-item .caption .caption-content p {
    font-weight: 300;
-   font-size: 20px;
+   font-size: 1.2rem;
    -webkit-text-stroke: 0.2px black;
- }
-
- .view{
-  margin-top: 20px;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: #888;
-  letter-spacing: 1px;
  }
  
  @media (min-width: 992px) {
-   .category {
+   .portfolio-item {
      max-width: none;
      margin: 0;
    }
-   .category .caption {
+   .portfolio-item .caption {
      transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
      transition: clip-path 0.25s ease-out, background-color 0.7s;
      transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
      -webkit-clip-path: inset(0px);
      clip-path: inset(0px);
    }
-   .category .caption .caption-content {
+   .portfolio-item .caption .caption-content {
      transition: opacity 0.25s;
-     margin:80px;
+     margin-left: 5rem;
+     margin-right: 5rem;
+     margin-bottom: 5rem;
    }
-   .category img {
+   .portfolio-item img {
      transition: -webkit-clip-path 0.25s ease-out;
      transition: clip-path 0.25s ease-out;
      transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
      -webkit-clip-path: inset(-1px);
      clip-path: inset(-1px);
    }
-   .category:hover img {
-     -webkit-clip-path: inset(30px);
-     clip-path: inset(30px);
+   .portfolio-item:hover img {
+     -webkit-clip-path: inset(2rem);
+     clip-path: inset(2rem);
    }
-   .category:hover .caption {
-     -webkit-clip-path: inset(30px);
-     clip-path: inset(30px);
+   .portfolio-item:hover .caption {
+     -webkit-clip-path: inset(2rem);
+     clip-path: inset(2rem);
    }
    
-   .category:hover .cap-bg1 {
+   .portfolio-item:hover .cap-bg1 {
     background-color: rgba(26, 112, 40, 0.9);
    }
 
-   .category:hover .cap-bg2 {
+   .portfolio-item:hover .cap-bg2 {
     background-color: rgba(134, 66, 20, 0.9);
    }
 
-   .category:hover .cap-bg3 {
+   .portfolio-item:hover .cap-bg3 {
     background-color: rgba(29, 128, 185, 0.9);
    }
 
-   .category:hover .cap-bg4 {
+   .portfolio-item:hover .cap-bg4 {
     background-color: rgba(161, 37, 130, 0.9);
    }
 
-   .category:hover .cap-bg5 {
+   .portfolio-item:hover .cap-bg5 {
     background-color: rgba(133, 9, 145, 0.9);
    }
 
-   .category:hover .cap-bg6 {
+   .portfolio-item:hover .cap-bg6 {
     background-color: rgba(161, 37, 54, 0.9);
    }
 
-   .category:hover .cap-bg7 {
+   .portfolio-item:hover .cap-bg7 {
     background-color: rgba(22, 19, 170, 0.9);
    }
 
-   .category:hover .cap-bg8 {
+   .portfolio-item:hover .cap-bg8 {
     background-color: rgba(170, 146, 39, 0.9);
    }
  }
@@ -465,20 +448,38 @@ a.move-top span{
 
 /*-- media --*/ 
 @media only screen 
-and (min-device-width: 280px) 
+and (min-device-width: 320px) 
 and (max-device-width: 745px)
 and (-webkit-min-device-pixel-ratio: 2)  {
+
     .menu-toggle{
       visibility: hidden;
     }
+
+    body{
+      width: 130%;
+    }
+}
+
+
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+  }
+  .masthead h1 {
+    font-size: 5.5rem;
+  }
 }
 
 @media (min-width: 992px) {
-  .header {
-    height: 100vh;
+
+  .rounded-circle{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
   }
-  .header h1 {
-    font-size: 90px;
+
+  .rounded-circle:hover  {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.562);
   }
 }
 
@@ -487,7 +488,7 @@ and (-webkit-min-device-pixel-ratio: 2)  {
     padding: 5px;
   }
  .team-info h3 {
-   font-size: 20px;
+   font-size: 1.2em;
   }
 }
 
@@ -516,3 +517,5 @@ and (-webkit-min-device-pixel-ratio: 2)  {
   }
 }
 /*-- //media --*/ 
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

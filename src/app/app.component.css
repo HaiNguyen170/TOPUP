@@ -43,12 +43,10 @@
     .pr-1{
       padding-left: 8px !important;
     }
-    .row{
-      margin: 0;
-    }
+  }
 
+  @media screen and (max-width: 320px){
     .column{
-      width: 200px;
-      flex: 50%;
+      width: 450px;
     }
   }

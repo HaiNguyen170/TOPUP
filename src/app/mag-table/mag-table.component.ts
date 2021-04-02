@@ -16,12 +16,11 @@ export class MagTableComponent implements AfterViewInit {
   dataSource: MagTableDataSource;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['id', 'title','student','faculty', 'status', 'created_date', 'expired_date', 'file', 'review', 'cmt'];
+  displayedColumns = ['id', 'title','student', 'status', 'created_date', 'expired_date', 'file', 'review'];
 
   constructor() {
     this.dataSource = new MagTableDataSource();
   }
-  
 
   ngAfterViewInit(): void {
     this.dataSource.sort = this.sort;

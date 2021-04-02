@@ -4,6 +4,10 @@
   margin-right: auto;
 }
 
+table{
+  overflow: auto;
+}
+
 .mat-elevation-z8{
   width: 80%;
   margin-left: auto;
@@ -15,3 +19,18 @@
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.35) !important;
 } 
 
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 763px) and (max-device-width: 941px) {
+  .mat-elevation-z8{
+    display: none;
+  }
+}
+
+@media 
+only screen and 
+(min-device-width: 941px) and (max-device-width: 1920px) {
+.device{
+  display: none;
+}
+}

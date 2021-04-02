@@ -104,6 +104,10 @@ export class DataTableDataSource extends DataSource<DataTableItem> {
       switch (this.sort?.active) {
         case 'name': return compare(a.name, b.name, isAsc);
         case 'id': return compare(+a.id, +b.id, isAsc);
+        case 'faculty': return compare(+a.faculty, +b.faculty, isAsc);
+        case 'phone': return compare(+a.phone, +b.phone, isAsc);
+        case 'address': return compare(+a.address, +b.address, isAsc);
+        case 'email': return compare(+a.email, +b.email, isAsc);
         default: return 0;
       }
     });

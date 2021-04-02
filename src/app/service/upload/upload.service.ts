@@ -5,10 +5,8 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-
-
 export class UploadService {
-  private baseUrl = 'http://localhost:8080/api/submit';
+  private baseUrl = 'http://localhost:8080';
 
   constructor(private http: HttpClient) { }
 

@@ -1,3 +1,4 @@
+<img src="../../assets/img/changewidth.png" class="device img-fluid" alt="Responsive image">
 <div class="mat-elevation-z8 shadow mt-3">
   <table mat-table class="full-width-table " matSort aria-label="Elements">
     <!-- Id Column -->
@@ -16,6 +17,12 @@
     <ng-container matColumnDef="student">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Student</th>
       <td class="td-center" mat-cell *matCellDef="let row">{{row.user}}</td>
+    </ng-container>
+
+    <!-- Faculty Column -->
+    <ng-container matColumnDef="faculty">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Faculty</th>
+      <td class="td-center" mat-cell *matCellDef="let row">{{row.faculty}}</td>
     </ng-container>
 
     <!-- Status Column -->
@@ -45,10 +52,16 @@
     <!-- Review Column -->
     <ng-container matColumnDef="review">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Review</th>
-      <td mat-cell *matCellDef="let row">
+      <td class="td-center" mat-cell *matCellDef="let row">
         <button class="btn btn-mini btn-success" >Approve</button>
         <button class="btn btn-mini btn-danger" >Reject</button>
       </td>
+    </ng-container>
+
+    <!-- File Column -->
+    <ng-container matColumnDef="cmt">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Comment</th>
+      <td class="td-center" mat-cell *matCellDef="let row"><span><a href="mailto:info@example.com">Send Email</a></span></td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

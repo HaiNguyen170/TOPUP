@@ -25,7 +25,7 @@ export class StatisticComponent implements OnInit {
     }
   };
   public pieChartLabels: Label[] = [['I.T'], ['Science'], ['Business'],['Architecture'],['Social'], 'Music & Art'];
-  public pieChartData: number[] = [29, 12.9, 19.3, 9.6, 12.9, 16.1];
+  public pieChartData: number[] = [20,15,20,15,15,15];
   public pieChartType: ChartType = 'pie';
   public pieChartLegend = true;
   public pieChartColors = [
@@ -72,12 +72,12 @@ export class StatisticComponent implements OnInit {
   public barChartLegend = true;
 
   public barChartData: ChartDataSets[] = [
-    { data: [450], label: 'I.T' },
-    { data: [200], label: 'Science' },
-    { data: [300], label: 'Business' },
-    { data: [150], label: 'Architecture' },
-    { data: [200], label: 'Social' },
-    { data: [250], label: 'Music & Art' },
+    { data: [4], label: 'I.T' },
+    { data: [3], label: 'Science' },
+    { data: [4], label: 'Business' },
+    { data: [3], label: 'Architect' },
+    { data: [3], label: 'Social' },
+    { data: [3], label: 'Music & Art' },
     { data: [0], label: ''}
   ];
 

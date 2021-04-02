@@ -7,7 +7,7 @@
   .column {
     display: flex;
     flex-direction: row;
-    width: 350px;
+    width: 250px;
   }
 
   .pr-1{
@@ -28,7 +28,7 @@
   }
   
   /* make the columns stack*/
-  @media screen and (max-width: 745px) {
+  @media screen and (max-width: 600px) {
     .row {
       flex-direction: column;
       margin: auto;
@@ -39,14 +39,17 @@
     }
   }
 
+
   @media screen and (max-width: 420px){
     .pr-1{
       padding-left: 8px !important;
     }
-  }
+    .row{
+      margin: 0;
+    }
 
-  @media screen and (max-width: 320px){
     .column{
-      width: 450px;
+      width: 200px;
+      flex: 50%;
     }
   }

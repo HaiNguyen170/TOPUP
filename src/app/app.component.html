@@ -13,15 +13,15 @@
             <a class="nav-item nav-link text-white" (click)="goToPage('Teach')">Teacher Manage</a>
         </div>
         
-            <div class="column pl-1" *ngIf="isLoggedIn">
+            <div class="column pl-1" *ngIf="!isLoggedIn">
                 <a class="nav-item nav-link text-white" (click)="goToPage('Event')">Submission</a>
             </div>
 
-            <div class="column pl-1" *ngIf="isLoggedIn">
+            <div class="column pl-1" *ngIf="!isLoggedIn">
                 <a class="nav-item nav-link text-white" (click)="goToPage('Mag-Table')">Grading</a>
             </div>
 
-            <div class="column pl-1" *ngIf="isLoggedIn">
+            <div class="column pl-1" *ngIf="!isLoggedIn">
                 <a class="nav-item nav-link text-white" (click)="goToPage('Statistic')">Statistic</a>
             </div>
 

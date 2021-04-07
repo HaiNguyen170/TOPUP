@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-
-const AUTH_API = 'http://localhost:8080/api/';
+import {environment} from "../../environment";
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -16,6 +15,9 @@ export interface Event{
   providedIn: 'root'
 })
 export class EventService {
+
+  baseUrl = environment.baseUrl;
+
   data: Event[]=[
     {year:2019},
     {year:2020},
@@ -25,7 +27,7 @@ export class EventService {
   constructor(private http: HttpClient) { }
 
   register(name: string, des: string, faculty:string, date:Date): Observable<any> {
-    return this.http.post(AUTH_API + 'create', {
+    return this.http.post(this.baseUrl + 'api/create/', {
       name,
       des,
       faculty,

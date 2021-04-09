@@ -12,7 +12,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class AuthService {
-  baseUrl = environment.apibaseUrl;
+  baseUrl = environment.baseUrl;
   constructor(private http: HttpClient) { }
 
   login(email: string, password: string): Observable<any> {

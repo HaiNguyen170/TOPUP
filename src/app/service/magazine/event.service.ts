@@ -25,7 +25,6 @@ export class EventService {
     {year:2021},
   ]
 
-  constructor(private http: HttpClient) { }
 
   register(name: string, des: string, faculty:string, date:Date): Observable<any> {
     return this.http.post(this.baseUrl + 'api/create/', {

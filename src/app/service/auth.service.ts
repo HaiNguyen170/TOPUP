@@ -16,14 +16,14 @@ export class AuthService {
   constructor(private http: HttpClient) { }
 
   login(email: string, password: string): Observable<any> {
-    return this.http.post(this.baseUrl + 'api/auth/signin', {
+    return this.http.post(this.baseUrl + '/api/auth/signin', {
       email,
       password
     }, httpOptions);
   }
 
   register(username: string, email: string, password: string,address:string,phonenumber:string,falcuty_id:string,role:[]): Observable<any> {
-    return this.http.post(this.baseUrl + 'api/auth/signup', {
+    return this.http.post(this.baseUrl + '/api/auth/signup', {
       username,
       email,
       password,

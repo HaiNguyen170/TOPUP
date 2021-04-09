@@ -12,18 +12,18 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class AuthService {
-  baseUrl = environment.baseUrl;
+  baseUrl = environment.apibaseUrl;
   constructor(private http: HttpClient) { }
 
   login(email: string, password: string): Observable<any> {
-    return this.http.post(this.baseUrl + 'api/login/', {
+    return this.http.post(this.baseUrl + 'api/auth/signin', {
       email,
       password
     }, httpOptions);
   }
 
   register(username: string, email: string, password: string,address:string,phonenumber:string,falcuty_id:string,role:[]): Observable<any> {
-    return this.http.post(this.baseUrl + 'api/signup/', {
+    return this.http.post(this.baseUrl + 'api/auth/signup', {
       username,
       email,
       password,

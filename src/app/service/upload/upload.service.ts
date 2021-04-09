@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 
 
 export class UploadService {
-  private baseUrl = 'http://localhost:8080/api/submit';
+  private baseUrl = 'https://cw1640.herokuapp.com/api/submit';
 
   constructor(private http: HttpClient) { }
 

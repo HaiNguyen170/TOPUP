@@ -17,6 +17,7 @@ export interface Event{
 export class EventService {
 
   baseUrl = environment.apibaseUrl;
+  constructor(private http: HttpClient) { }
 
   data: Event[]=[
     {year:2019},

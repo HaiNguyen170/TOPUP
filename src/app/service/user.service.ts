@@ -7,7 +7,7 @@ import {environment} from "../../environments/environment";
   providedIn: 'root'
 })
 export class UserService {
-  baseUrl = environment.apibaseUrl;
+  baseUrl = environment.baseUrl;
   constructor(private http: HttpClient) { }
 
   getUserBoard(id: number): Observable<any> {

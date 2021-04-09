@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apibaseUrl: 'https://cw1640.herokuapp.com'
+  baseUrl: 'https://cw1640.herokuapp.com'
 };
 
 /*

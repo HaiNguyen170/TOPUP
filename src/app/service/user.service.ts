@@ -7,11 +7,11 @@ import {environment} from "../../environments/environment";
   providedIn: 'root'
 })
 export class UserService {
-  baseUrl = environment.baseUrl;
+  baseUrl = environment.apibaseUrl;
   constructor(private http: HttpClient) { }
 
   getUserBoard(id: number): Observable<any> {
-    return this.http.get(this.baseUrl + 'api/user/' + id);
+    return this.http.get(this.baseUrl + 'api/user/{id}');
   }
 
   getModeratorBoard(id: number): Observable<any> {

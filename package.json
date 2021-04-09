@@ -1,9 +1,6 @@
 {
   "name": "test8",
   "version": "0.0.0",
-  "engines": {
-    "node": "14.15.4"
-  },
   "scripts": {
     "ng": "ng",
     "heroku-postbuild": "ng build --prod && npm install -g http-server-spa",
@@ -54,5 +51,9 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~4.0.2"
+  },
+    "engines": {
+    "node": "15.14.0",
+    "npm": "7.7.6"
   }
 }

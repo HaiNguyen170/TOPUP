@@ -13,8 +13,8 @@ import { FileComponent } from './file/file.component';
 import { ArticleComponent } from './article/article.component';
 import { AricleDetailComponent } from './aricle-detail/aricle-detail.component';
 import { UserComponent } from './user/user.component';
-import { UserDetailComponent } from './user-detail/user-detail.component';
-import { ArticleCreateComponent } from './article-create/article-create.component';
+//import { UserDetailComponent } from './user-detail/user-detail.component';
+//import { ArticleCreateComponent } from './article-create/article-create.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -29,8 +29,8 @@ const routes: Routes = [
   { path: 'Uploadfile', component: FileComponent },
   { path: 'Article', component: ArticleComponent },
   { path: 'Article-Detail/:id', component: AricleDetailComponent },
-  { path: 'User', component: UserComponent },
-  { path: 'User-Detail/:id', component: UserDetailComponent },
+  //{ path: 'User', component: UserComponent },
+  //{ path: 'User-Detail/:id', component: UserDetailComponent },
   { path: 'Article-Create', component: ArticleCreateComponent }
 ];
 

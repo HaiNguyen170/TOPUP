@@ -1,25 +1,51 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import {environment} from "../../environments/environment";
+
+const API_URL = 'https://cw1640.herokuapp.com/api/test/';
+const API_USER = 'https://cw1640.herokuapp.com/api/users';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
-  baseUrl = environment.baseUrl;
   constructor(private http: HttpClient) { }
 
-  getUserBoard(id: number): Observable<any> {
-    return this.http.get(this.baseUrl + 'api/user/{id}');
+  getPublicContent(): Observable<any> {
+    return this.http.get(API_URL + 'all', { responseType: 'text' });
   }
 
-  getModeratorBoard(id: number): Observable<any> {
-    return this.http.get(this.baseUrl + 'api/user/mod' + id);
+  getUserBoard(): Observable<any> {
+    return this.http.get(API_URL + 'user', { responseType: 'text' });
   }
 
-  getAdminBoard(id: number): Observable<any> {
-    return this.http.get(this.baseUrl + 'api/user/admin' + id);
+  getModeratorBoard(): Observable<any> {
+    return this.http.get(API_URL + 'mod', { responseType: 'text' });
   }
 
+  getAdminBoard(): Observable<any> {
+    return this.http.get(API_URL + 'admin', { responseType: 'text' });
+  }
+
+  getAllUser(): Observable<any> {
+    return this.http.get(API_USER);
+  }
+
+  updateUser(user_id, data): Observable<any> {
+    return this.http.put(API_USER + `/${user_id}`, data);
+  }
+
+  getUser(user_id): Observable<any> {
+    return this.http.get(API_USER + `/${user_id}`);
+  }
+
+  deleteUser(user_id):Observable<any>{
+    return this.http.delete(API_USER+`/${user_id}`);
+  }
+
+
+  updateById(id, payload) {
+    let url = `http://localhost/repos/Sportaz-repo/VaamozWeb/VaamozBusiness/RestApi/VaamozStore/AdminStore/angular_admin/php/index.php?id=${id}`
+    return this.http.put(url, payload);
+  }
 }

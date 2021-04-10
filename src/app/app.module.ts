@@ -22,15 +22,15 @@ import { ChartsModule } from 'ng2-charts';
 import { RegisterComponent } from './register/register.component';
 import { ProfileComponent } from './profile/profile.component';
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
-import { MatDatepickerModule} from '@angular/material/datepicker';
-import { MatNativeDateModule} from '@angular/material/core';
-import { MatFormFieldModule} from '@angular/material/form-field';
-import { ReactiveFormsModule} from '@angular/forms';
-import { TeacherTableComponent } from './teacher-table/teacher-table.component';
+import { FileComponent } from './file/file.component';
 import { ArticleComponent } from './article/article.component';
-import { DetailComponent } from './detail/detail.component';
-import { EventComponent } from './event/event.component';
-import { EventCreateComponent } from './event-create/event-create.component';
+import { AricleDetailComponent } from './aricle-detail/aricle-detail.component';
+import { UserComponent } from './user/user.component';
+import {ToastModule} from 'ng-uikit-pro-standard';
+import { UserDetailComponent } from './user-detail/user-detail.component';
+import { ArticleCreateComponent } from './article-create/article-create.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -44,11 +44,12 @@ import { EventCreateComponent } from './event-create/event-create.component';
     MagTableComponent,
     RegisterComponent,
     ProfileComponent,
-    TeacherTableComponent,
+    FileComponent,
     ArticleComponent,
-    DetailComponent,
-    EventComponent,
-    EventCreateComponent, 
+    AricleDetailComponent,
+    UserComponent,
+    UserDetailComponent,
+    ArticleCreateComponent
   ], 
   imports: [
     BrowserModule,
@@ -57,16 +58,15 @@ import { EventCreateComponent } from './event-create/event-create.component';
     HttpClientModule,
     AngularFileUploaderModule,
     MatTableModule,
+    MatFormFieldModule,
     MatPaginatorModule,
+    MatDatepickerModule,
     MatSortModule,
     MatButtonModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
     BrowserAnimationsModule,
     ChartsModule,
-    MatFormFieldModule,
     FormsModule,
-    ReactiveFormsModule
+    ToastModule.forRoot()
   ],
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent]

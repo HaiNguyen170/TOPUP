@@ -1,42 +1,42 @@
 /**import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import {environment} from "../../../environments/environment";
+*import { HttpClient, HttpHeaders } from '@angular/common/http';
+*import { Observable } from 'rxjs';
+*import {environment} from "../../../environments/environment";
 
-const httpOptions = {
-  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
-};
+*const httpOptions = {
+ * headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+*};
 
-export interface Event{
- year:number;
-  }
+*export interface Event{
+ *year:number;
+  *}
 
-@Injectable({
-  providedIn: 'root'
-})
-export class EventService {
+*@Injectable({
+ * providedIn: 'root'
+*})
+*export class EventService {
 
-  baseUrl = environment.baseUrl;
-  constructor(private http: HttpClient) { }
+ * baseUrl = environment.baseUrl;
+  *constructor(private http: HttpClient) { }
 
-  data: Event[]=[
-    {year:2019},
-    {year:2020},
-    {year:2021},
-  ]
+  *data: Event[]=[
+   * {year:2019},
+    *{year:2020},
+    *{year:2021},
+  *]
 
 
-  register(name: string, des: string, faculty:string, date:Date): Observable<any> {
-    return this.http.post(this.baseUrl + 'api/create/', {
-      name,
-      des,
-      faculty,
-      date
-    }, httpOptions);
-  }
+  *register(name: string, des: string, faculty:string, date:Date): Observable<any> {
+   * return this.http.post(this.baseUrl + 'api/create/', {
+    *  name,
+     * des,
+     *faculty,
+    *  date
+    *}, httpOptions);
+  *}
 
-  getData(): Event[] {
-    return this.data;
-  }
-}
+  *getData(): Event[] {
+   * return this.data;
+  *}
+*}
 */

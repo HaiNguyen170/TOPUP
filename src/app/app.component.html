@@ -2,7 +2,7 @@
     <div class="row">
         <div class="column pr-1" *ngIf="!isLoggedIn">
             <a class="nav-item nav-link text-white" (click)="goToPage('')">Home</a>
-            <a class="nav-item nav-link text-white" (click)="goToPage('Login')">Login</a>
+            <a class="nav-item nav-link text-white" (click)="goToPage('https://cw1640.herokuapp.com/api/auth/signin')">Login</a>
             <a class="nav-item nav-link text-white" (click)="goToPage('Error')">Upcoming Project</a>
         </div>
 
